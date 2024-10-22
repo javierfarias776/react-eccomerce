@@ -1,0 +1,11 @@
+[
+    {"id":1, "nombre": "Yamaha FZ-25.", "precio":10000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"},
+    {"id":2, "nombre": "Yamaha MT-10.", "precio":11000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"},
+    {"id":3, "nombre": "Susuky Gixxer 155", "precio":12000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"},
+    {"id":4, "nombre": "Honda moto trail", "precio":13000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"},
+    {"id":5, "nombre": "Yamaha FZ-25.", "precio":14000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"},
+    {"id":6, "nombre": "Yamaha MT-10", "precio":15000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"},
+    {"id":7, "nombre": "Susuky Gixxer 155", "precio":16000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"},
+    {"id":8, "nombre": "Honda moto trail", "precio":17000, "stock":5, "image":"https://suzukimotos.ec/assets/img/motos/vstrom800/foto1.jpg"}
+
+]

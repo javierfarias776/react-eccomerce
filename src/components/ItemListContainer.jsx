@@ -1,12 +1,36 @@
 import React from 'react'
-import ItemCount from './ItemCount'
+import ItemList from './ItemList';
 
 
-const ItemListContainer = ({saludo}) => {
+
+const ItemListContainer = () => {
+  const getDatos = ()=>{
+    return new Promise ((resolve, reject)=>{
+      if(Data.length === 0){
+        reject(new Error("no hay datos"))
+      }
+      setTimeout(()=>{
+        resolve(Data)
+      },3000);
+    });
+  };
+
+  //getDatos().then((Data)=>console.log(Data))
+  //proceso asincrono
+
+ async function fetchingData() {
+  try{
+    const datosFetched = getDatos()
+    console.log(datosFetched)
+  }catch(err){
+    console.log(err)
+  }
+ }
+
+ fetchingData()
   return (
     <>
-    <h3>{saludo}</h3>
-    <ItemCount stock= {10}/>
+    <ItemList productos = {Data}/>
     </>
   )
 }
