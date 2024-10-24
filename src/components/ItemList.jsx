@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from './Item'
 
-const ItemList = () => {
+const ItemList = ({productos}) => {
   return (
     <>
       <div className='container'>

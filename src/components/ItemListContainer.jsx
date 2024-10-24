@@ -1,4 +1,5 @@
-import React from 'react'
+
+import Data from "../data.json"
 import ItemList from './ItemList';
 
 
