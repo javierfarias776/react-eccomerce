@@ -1,5 +1,6 @@
 import { Card, CardBody, CardFooter, Text, Stack, Divider, Heading, Image, Center, Button} from '@chakra-ui/react'
-const Item = ({id, nombre, precio, stock, image}) => {
+import { Link } from 'react-router-dom'
+const Item = ({id, nombre, marca, stock, image}) => {
   return (
     <>
     <div>
@@ -9,12 +10,12 @@ const Item = ({id, nombre, precio, stock, image}) => {
 
           <Card className="card-main">
             <CardBody>
-              <Image borderRadius="sm" src={image} />
+              <Image borderRadius="sm" className='imagen' src={image} />
               <Stack mt="1" spacing="1">
                 <Heading size="md">{nombre}</Heading>
 
                 <Text color="blue.800" fontSize="l">
-                  Category: {precio}
+                  Marca: {marca}
                 </Text>
                 <Text color="red.600" fontSize="l">
                   Stock: {stock}
@@ -25,7 +26,7 @@ const Item = ({id, nombre, precio, stock, image}) => {
             <CardFooter className="card-footer">
               <Center className="btn-center">
                 <Button variant="solid" colorScheme="blue">
-                  <a href="#">Details</a>
+                  <Link to={`/item/${id}`}>Details</Link>
                 </Button>
               </Center>
             </CardFooter>
