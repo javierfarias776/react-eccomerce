@@ -6,14 +6,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Inicio from './Inicio'
 import Cart from './components/Cart'
 import ItemDetailContainer from './components/ItemDetailContainer'
-
-
+import ShoppingCartContext from './context/shoppingCartContext'
 
 
 const App = () => {
   
   return (
-  <>
+    <>
+  <ShoppingCartContext>
+
   <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -25,11 +26,13 @@ const App = () => {
             exact
             path="/marca/:marca"
             element={<ItemListContainer />}
-          />   
+            />   
     </Routes>
     
   </BrowserRouter>
-  </>
+            </ShoppingCartContext>
+  
+    </>
     
   
   )
